@@ -25,11 +25,12 @@ For detailed instructions on how to set up ROCm on different platforms, refer to
 
 Using Ubuntu as an example, hipSPARSELt can be installed using
 
+.. <!-- spellcheck-disable -->
 .. code-block:: bash
 
     sudo apt-get update
     sudo apt-get install hipsparselt
-
+.. <!-- spellcheck-enable -->
 
 Once installed, hipSPARSELt can be used just like any other library with a C API.
 
@@ -61,10 +62,12 @@ The hipSPARSELt source code is available on our
 
 Download the develop branch using:
 
+.. <!-- spellcheck-disable -->
 .. code-block:: bash
 
     git clone -b develop https://github.com/ROCmSoftwarePlatform/hipSPARSELt.git
     cd hipSPARSELt
+.. <!-- spellcheck-enable -->
 
 Build library packages, including dependencies and clients
 --------------------------------------------------------------------------------------------------------------
@@ -104,6 +107,7 @@ We recommended installing hipSPARSELt using the ``install.sh`` script.
 
     CMake 3.16.8 or later is required in order to build hipSPARSELt.
 
+.. <!-- spellcheck-disable -->
 .. code-block:: bash
 
     # Create and change the build directory
@@ -121,7 +125,9 @@ We recommended installing hipSPARSELt using the ``install.sh`` script.
     GoogleTest is required in order to build hipSPARSELt clients.
 
     Build hipSPARSELt with dependencies and clients using the following commands:
+.. <!-- spellcheck-enable -->
 
+.. <!-- spellcheck-disable -->
 .. code-block:: bash
 
     # Install googletest
@@ -140,12 +146,14 @@ We recommended installing hipSPARSELt using the ``install.sh`` script.
 
     # Install hipSPARSELt to /opt/rocm
     $ make install
+.. <!-- spellcheck-enable -->
 
 Testing the installation
 ==========================================
 
 After successfully compiling the library with clients, you can test the installation by running a hipSPARSELt example:
 
+.. <!-- spellcheck-disable -->
 .. code-block:: bash
 
    # Navigate to clients binary directory
@@ -153,10 +161,11 @@ After successfully compiling the library with clients, you can test the installa
 
    # Execute hipSPARSELt example
    $ ./example_spmm_strided_batched -m 32 -n 32 -k 32 --batch_count 1
+.. <!-- spellcheck-enable -->
 
 Running benchmarks & unit tests
 ----------------------------------------------------------------------------
-
+.. <!-- spellcheck-disable -->
 To run **benchmarks**, hipSPARSELt has to be built with option -DBUILD_CLIENTS_BENCHMARKS=ON (or using ./install.sh -c).
 
 .. code-block:: bash
@@ -176,3 +185,4 @@ To run **unit tests**, hipSPARSELt has to be built with option -DBUILD_CLIENTS_T
 
     # Run all tests
     ./clients/staging/hipsparselt-test
+.. <!-- spellcheck-enable -->
