@@ -62,12 +62,10 @@ The hipSPARSELt source code is available on our
 
 Download the develop branch using:
 
-.. <!-- spellcheck-disable -->
 .. code-block:: bash
 
     git clone -b develop https://github.com/ROCmSoftwarePlatform/hipSPARSELt.git
     cd hipSPARSELt
-.. <!-- spellcheck-enable -->
 
 Build library packages, including dependencies and clients
 --------------------------------------------------------------------------------------------------------------
@@ -107,7 +105,6 @@ We recommended installing hipSPARSELt using the ``install.sh`` script.
 
     CMake 3.16.8 or later is required in order to build hipSPARSELt.
 
-.. <!-- spellcheck-disable -->
 .. code-block:: bash
 
     # Create and change the build directory
@@ -125,9 +122,7 @@ We recommended installing hipSPARSELt using the ``install.sh`` script.
     GoogleTest is required in order to build hipSPARSELt clients.
 
     Build hipSPARSELt with dependencies and clients using the following commands:
-.. <!-- spellcheck-enable -->
 
-.. <!-- spellcheck-disable -->
 .. code-block:: bash
 
     # Install googletest
@@ -146,7 +141,6 @@ We recommended installing hipSPARSELt using the ``install.sh`` script.
 
     # Install hipSPARSELt to /opt/rocm
     $ make install
-.. <!-- spellcheck-enable -->
 
 Testing the installation
 ==========================================

@@ -23,7 +23,6 @@ hipSPARSELt uses a structured sparsity storage format, which is represented by a
 Consider the following :math:`4 \times 4` matrix and the structured sparsity structures using
 :math:`m = 4, n = 4`:
 
-.. <!-- spellcheck-disable -->
 .. math::
   A = \begin{pmatrix}
         1.0 & 2.0 & 0.0 & 0.0 \\
@@ -31,11 +30,9 @@ Consider the following :math:`4 \times 4` matrix and the structured sparsity str
         0.0 & 6.0 & 7.0 & 0.0 \\
         0.0 & 6.0 & 0.0 & 8.0 \\
       \end{pmatrix}
-.. <!-- spellcheck-enable -->
 
 where
 
-.. <!-- spellcheck-disable -->
 .. math::
   Compressed A = \begin{pmatrix}
                   1.0 & 2.0 \\
@@ -49,4 +46,3 @@ where
                   1 & 2 \\
                   1 & 3 \\
                 \end{pmatrix}
-.. <!-- spellcheck-enable -->
